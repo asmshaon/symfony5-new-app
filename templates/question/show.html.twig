@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>
+        {{ question }}
+    </h1>
+
+    {% for key in answers|keys %}
+        <h3> {{ key }} </h3>
+    {% endfor %}
+{% endblock %}
