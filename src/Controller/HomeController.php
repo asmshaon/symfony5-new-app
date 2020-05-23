@@ -86,8 +86,7 @@ class HomeController extends AbstractController
        $repository = $entityManager->getRepository(News::class);
 
         $news = $repository->find(1);
-        dd($news);
 
-        return new JsonResponse($repository->sdd(1));
+        return new JsonResponse($news);
     }
 }
